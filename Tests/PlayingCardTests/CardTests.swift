@@ -15,7 +15,7 @@ import Testing
 struct CardTests {
 
   @Test
-  func testCardSingle() {
+  func cardSingle() {
     let card1 = PlayingCard(rank: .queen, suit: .diamonds)
     let card2 = PlayingCard(rank: .king, suit: .diamonds)
     let card3 = PlayingCard(rank: .ace, suit: .clubs)
@@ -32,7 +32,7 @@ struct CardTests {
   }
 
   @Test
-  func testCardStringEquality() {
+  func cardStringEquality() {
     let card1 = PlayingCard(rank: .jack, suit: .clubs)
     let card2 = PlayingCard(rank: .two, suit: .hearts)
     let card3 = PlayingCard(rank: .queen, suit: .diamonds)

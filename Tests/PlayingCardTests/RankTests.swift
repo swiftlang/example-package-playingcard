@@ -15,7 +15,7 @@ import Testing
 struct RankTests {
 
   @Test
-  func testRankStringEquality() {
+  func rankStringEquality() {
     let numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
     let suits = numbers.map { Rank(rawValue: $0) }.compactMap { $0 }.map {
       Int(String(describing: $0)) ?? 0
@@ -31,7 +31,7 @@ struct RankTests {
   }
 
   @Test
-  func testRankComparable() {
+  func rankComparable() {
     #expect(Rank.ace > Rank.two)
     #expect(Rank.ace > Rank.king)
     #expect(Rank.king > Rank.queen)

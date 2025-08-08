@@ -15,7 +15,7 @@ import Testing
 struct SuitTests {
 
   @Test
-  func testSuitStringEquality() {
+  func suitStringEquality() {
     #expect(String(describing: Suit.spades) == "♠︎")
     #expect(String(describing: Suit.hearts) == "♡")
     #expect(String(describing: Suit.diamonds) == "♢")
@@ -23,7 +23,7 @@ struct SuitTests {
   }
 
   @Test
-  func testSuitComparable() {
+  func suitComparable() {
     #expect(Suit.spades > Suit.diamonds)
     #expect(Suit.hearts > Suit.diamonds)
     #expect(Suit.hearts > Suit.clubs)
