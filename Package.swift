@@ -1,7 +1,5 @@
 // swift-tools-version:6.0
 
-import PackageDescription
-
 //===----------------------------------------------------------------------===//
 //
 // This source file is part of the example package playingcard open source project
@@ -12,6 +10,8 @@ import PackageDescription
 // See https://swift.org/LICENSE.txt for license information
 //
 //===----------------------------------------------------------------------===//
+
+import PackageDescription
 
 let package = Package(
     name: "PlayingCard",

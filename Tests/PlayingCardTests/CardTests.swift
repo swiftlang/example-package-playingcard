@@ -37,8 +37,8 @@ struct CardTests {
     let card2 = PlayingCard(rank: .two, suit: .hearts)
     let card3 = PlayingCard(rank: .queen, suit: .diamonds)
 
-    #expect("♣︎ J" == String(describing: card1))
-    #expect("♡ 2" == String(describing: card2))
-    #expect("♢ Q" == String(describing: card3))
+    #expect(String(describing: card1) == "♣︎ J")
+    #expect(String(describing: card2) == "♡ 2")
+    #expect(String(describing: card3) == "♢ Q")
   }
 }
